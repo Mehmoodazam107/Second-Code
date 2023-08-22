@@ -6,13 +6,13 @@ int main()
     cout << " if the credit hours are ? ";
     cin >> credithours;
     
-    if (credithours < 12)
+    if (credithours<0){cout<<"it is not possible credit hours are negative";
+    }
+    else if (credithours < 12)
     {
         cout << "you have to select at least 12 credit hours";
     }
     else if (credithours >= 12) {cout << "he is register";
     }
-    else if(credithours<0){cout<<"he is not register";
-        }
     return 0;
 }
