@@ -3,20 +3,16 @@ using namespace std;
 
 int main()
 {
-
-    int i = 7;
-
+int i=1;
     cout << "Enter Number ";
 
     cin >> i;
 
-    for (; i >= -2; i--)
-    {
-        if (i != 0)
-        {
-            cout << i<<endl;
-        }
-    }
+    for (int i=1; i < 18; i++)if(i/2)
+    
+            {
+                cout << i<<endl;    
+                   }
 
     return 0;
 }
