@@ -1,29 +1,38 @@
-<<<<<<< HEAD
-=======
 #include <iostream>
 using namespace std;
 
- 
-int
-main () 
+int main()
 {
-  
-int i=17;
-  
-cout << "Enter Number ";
-  //cout<<" ";
- 
-cin >> i;
-  
- 
-for (; i >= 1; i--)
-    if (i % 2 != 0)
-      {
-	
-cout << i;
- }	
- 
-return 0;
-      
+
+  // int 1st;
+  // int 2nd;
+  int num1;
+
+  int num2;
+
+  cout << "enter 1st no?";
+  cin >> num1;
+  cout << "enter 2nd no?";
+  cin >> num2;
+  int small;
+  int large;
+  if (num1 < num2)
+  {
+    cout << "num1 is small";
+    large = num2;
+    small = num1;
+  }
+  else if (num1 == num2)
+  {
+    cout << "they are equal";
+  }
+  else
+  {
+    cout << "num2 is large";
+    small = num2;
+    large = num1;
+  }
+  cout << endl;
+  cout << "small number is " << small << " large number is : " << large;
+  return 0;
 }
->>>>>>> 16855f5130fe5e8e446de6b586472373647e8ca6
