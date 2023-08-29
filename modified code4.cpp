@@ -4,27 +4,17 @@ using namespace std;
 int main()
 {
 
-  int i = 17;
+    int small;
 
-  cout << "Enter Number ";
-  // cout<<" ";
-
-  cin >> i;
-
-  for (; i >= 1; i--)
-  {
-    if (i % 2 != 0)
-    {//odd number only
-      cout << i;
-    }{
-      if(i==1){
-        cout<<".";}
-      else
-      {cout<<" ";}
-    
-
+    int large;
+    cout<<"small no is?";
+    cin>>small;
+    cout<<"large no is?";
+    cin>>large;
+    for(;large>small;large--)if(large % small !=0)
+    {
+        cout<<large;
     }
-  }
-
-  return 0;
+;
+    return 0;
 }
